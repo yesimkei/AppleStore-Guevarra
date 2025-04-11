@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Store | Cat's Tech</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+      color: #1a1c1e;
+    }
+
+    .navbar {
+      background-color: #00796b;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #ffffff !important;
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('apple-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      position: relative;
+      color: #505d5f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      padding-top: 160px;
+    }
+
+    .hero-text h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: #00796b;
+    }
+
+    .btn-primary {
+      background-color: #00796b;
+      border: none;
+      font-weight: 500;
+    }
+
+    .btn-primary:hover {
+      background-color: #00796b;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: #f1f1f1;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #80cbc4;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .lead {
+      color: #374151;
+    }
+
+    h2 i {
+      color: #ffcc00;
+    }
+
+    /* Fix for hamburger icon */
+    .navbar-toggler-icon {
+      background-color: #ffffff; /* Ensure the hamburger icon is visible */
+      width: 30px;
+      height: 3px;
+      border-radius: 2px;
+      display: block;
+      position: relative;
+      background: #ffffff;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #f5f1f1;
+      height: 3px;
+      border-radius: 2px;
+      transition: 0.3s ease;
+    }
+
+    .navbar-toggler-icon::before {
+      top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+      bottom: -8px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-apple-alt mr-2"></i>Cat's Tech Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html"><i class="fas fa-concierge-bell"></i> Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container hero-text text-center">
+      <h1>Welcome to Cat's Tech Store</h1>
+      <p class="lead">Explore the latest Apple gadgets — elegant, powerful, and innovative.</p>
+    </div>
+  </div>
+
+  <!-- Welcoming Message -->
+  <div class="container text-center my-5">
+    <h2 class="font-weight-bold"><i class="fas fa-star"></i> Hello there, tech lover!</h2>
+    <p class="lead">You're one click away from discovering sleek and stylish Apple devices.</p>
+  </div>
+
+  <!-- Product Display -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Product Cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg h-100">
+          <img src="iphone.jpg" class="card-img-top img-fluid" alt="IPhone 15">
+          <div class="card-body">
+            <h5 class="card-title">IPhone 15 <i class="fas fa-mobile-alt"></i></h5>
+            <p class="card-text">Experience the latest iPhone technology.</p>
+            <a href="product-Iphone15.html" class="btn btn-primary">
+              <i class="fas fa-eye"></i> View Product
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="macbook.jpg" class="card-img-top" alt="MacBook Pro">
+          <div class="card-body">
+            <h5 class="card-title">MacBook Pro <i class="fas fa-laptop"></i></h5>
+            <p class="card-text">Powerful performance in a sleek design.</p>
+            <a href="product-macbookpro.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="ipad.jpg" class="card-img-top" alt="IPad Pro">
+          <div class="card-body">
+            <h5 class="card-title">IPad Pro <i class="fas fa-tablet-alt"></i></h5>
+            <p class="card-text">Create, design, and perform with ease.</p>
+            <a href="product-ipadpro.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="watch.jpg" class="card-img-top" alt="Apple Watch">
+          <div class="card-body">
+            <h5 class="card-title">Apple Watch <i class="fas fa-watch"></i></h5>
+            <p class="card-text">Track your fitness and stay connected.</p>
+            <a href="product-applewatch.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="airpods.jpg" class="card-img-top" alt="AirPods Pro">
+          <div class="card-body">
+            <h5 class="card-title">AirPods Pro <i class="fas fa-headphones-alt"></i></h5>
+            <p class="card-text">Crystal clear audio with noise cancellation.</p>
+            <a href="product-airpodspro.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="imac.jpg" class="card-img-top" alt="iMac">
+          <div class="card-body">
+            <h5 class="card-title">Imac <i class="fas fa-desktop"></i></h5>
+            <p class="card-text">All-in-one powerhouse for your workspace.</p>
+            <a href="product-imac.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="macmini.jpg" class="card-img-top" alt="Mac Mini">
+          <div class="card-body">
+            <h5 class="card-title">Mac Mini <i class="fas fa-server"></i></h5>
+            <p class="card-text">Compact power, endless possibilities.</p>
+            <a href="product-macmini.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="APPLETV.jpg" class="card-img-top" alt="Apple TV 4K">
+          <div class="card-body">
+            <h5 class="card-title">Apple TV 4K <i class="fas fa-tv"></i></h5>
+            <p class="card-text">Entertainment reimagined in stunning 4K.</p>
+            <a href="product-appletv.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="magickeyboard.jpg" class="card-img-top" alt="Magic Keyboard">
+          <div class="card-body">
+            <h5 class="card-title">Magic Keyboard <i class="fas fa-keyboard"></i></h5>
+            <p class="card-text">Type with precision and comfort.</p>
+            <a href="product-magickeyboard.html" class="btn btn-primary"><i class="fas fa-eye"></i> View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Cat's Tech Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
